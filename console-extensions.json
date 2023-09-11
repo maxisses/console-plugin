@@ -11,10 +11,10 @@
     "type": "console.navigation/href",
     "properties": {
       "id": "example",
-      "name": "%plugin__console-plugin-template~Plugin Example%",
+      "name": "%plugin__console-plugin-template~Minerva Resources%",
       "href": "/example",
-      "perspective": "admin",
-      "section": "home"
+      "insertAfter": "home",
+      "perspective": "admin"
     }
   }
 ]

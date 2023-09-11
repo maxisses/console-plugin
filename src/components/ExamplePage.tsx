@@ -7,41 +7,41 @@ import {
   TextContent,
   Title,
 } from '@patternfly/react-core';
-import './example.css';
+import './example.css'; // Use a Minerva-inspired stylesheet
 import { useTranslation } from 'react-i18next';
 
-export default function ExamplePage() {
-  const { t } = useTranslation('plugin__console-plugin-template');
+export default function MinervaPage() {
+  const { t } = useTranslation('openshift__minerva-theme');
 
   return (
     <>
       <Helmet>
-        <title data-test="example-page-title">{t('Hello, Plugin!')}</title>
+        <title data-test="minerva-page-title">{t('Minerva and OpenShift')}</title>
       </Helmet>
       <Page>
         <PageSection variant="light">
-          <Title headingLevel="h1">{t('Hello, Plugin!')}</Title>
+          <Title headingLevel="h1">{t('Minerva and OpenShift')}</Title>
         </PageSection>
         <PageSection variant="light">
           <TextContent>
             <Text component="p">
-              <span className="console-plugin-template__nice">
-                {t('Nice!')}
+              <span className="minerva-theme__insightful">
+                {t('Insightful!')}
               </span>{' '}
-              {t('Your plugin is working.')}
+              {t('Discover the wisdom of OpenShift.')}
             </Text>
             <Text component="p">
               {t(
-                'This is a custom page contributed by the console plugin template. The extension that adds the page is declared in console-extensions.json in the project root along with the corresponding nav item. Update console-extensions.json to change or add extensions. Code references in console-extensions.json must have a corresonding property',
+                'This page explores the divine connection between the goddess Minerva and the power of OpenShift. Our console plugin template brings this synergy to life. You can configure extensions in console-extensions.json at the project root, including navigation items and code references.',
               )}
               <code>{t('exposedModules')}</code>{' '}
-              {t('in package.json mapping the reference to the module.')}
+              {t('in package.json link to the corresponding module.')}
             </Text>
             <Text component="p">
-              {t('After cloning this project, replace references to')}{' '}
-              <code>{t('console-template-plugin')}</code>{' '}
+              {t('Start by cloning this project, and then update references to')}{' '}
+              <code>{t('minerva-openshift-plugin')}</code>{' '}
               {t(
-                'and other plugin metadata in package.json with values for your plugin.',
+                'and other plugin details in package.json with your plugin information.',
               )}
             </Text>
           </TextContent>
